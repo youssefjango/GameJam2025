@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4763150428398587124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5776222719306389928}
+  - component: {fileID: 1160449418064861096}
+  - component: {fileID: 3343273064128712693}
+  - component: {fileID: 5953840398672344791}
+  m_Layer: 0
+  m_Name: MapGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5776222719306389928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4763150428398587124}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0717592, y: 0.006930501, z: 0.047513526}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1160449418064861096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4763150428398587124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10fab13c9ba47484981bfc9af49e4da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorTileMap: {fileID: 0}
+  grassTileMap: {fileID: 0}
+  wallTileMap: {fileID: 0}
+  Floor: {fileID: 11400000, guid: d396c9261e5f392439364244c4d70472, type: 2}
+  Grass1: {fileID: 11400000, guid: f567848fa6db8b54aa04cd2ff0b9d962, type: 2}
+  Grass2: {fileID: 11400000, guid: 23a3a6934d414634aad78910b48dcf7f, type: 2}
+  Grass3: {fileID: 11400000, guid: ccd7b9d3b911def4892e654ba4ce9482, type: 2}
+  Grass4: {fileID: 11400000, guid: 66b1c9ff313f44446bff4a3d29759c7a, type: 2}
+  Grass5: {fileID: 11400000, guid: d396c9261e5f392439364244c4d70472, type: 2}
+  tree1Prefab: {fileID: 8624995561275227455, guid: 082837a250ff31d46987d85af38b2c8e, type: 3}
+  tree2Prefab: {fileID: 2907434445251749612, guid: c30ff24df2883d444bd9168f9b890c41, type: 3}
+  bush1Prefab: {fileID: 5362156352138633942, guid: e8c6567c0fecad64692b5af50c5b1364, type: 3}
+  barrel1Prefab: {fileID: 5362156352138633942, guid: ce09a8bbfc1b60143abd6ea1c8397432, type: 3}
+  crate1Prefab: {fileID: 5362156352138633942, guid: 312708940a16fa5438388804c2978c64, type: 3}
+  crate2Prefab: {fileID: 5362156352138633942, guid: 4e9d0b15298c3db49b2b1bd77ea30579, type: 3}
+  enemyPrefab: {fileID: 7686630869056256891, guid: 430d90294a1da7a41b15aadf241f8d77, type: 3}
+  torchPrefab: {fileID: 5730173289311893451, guid: d108b7b04e1a0f546af8ffeb0dcfa512, type: 3}
+  Wall: {fileID: 11400000, guid: f16ced006bacffa41b17997d0fe7ccc5, type: 2}
+  MapWidth: 20
+  MapHeight: 20
+  MaximumWalkers: 3
+  TileCount: 0
+  FillPercentage: 0.6
+  WaitTime: 0
+--- !u!114 &3343273064128712693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4763150428398587124}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d1a6ece00e66640916ae234281ed62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 6821946413478969207, guid: 58711d5bcf5dceb4789da9e08e004321, type: 3}
+  player: {fileID: 0}
+  minDistance: 4
+  maxDistance: 6
+  spawnInterval: 2
+--- !u!114 &5953840398672344791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4763150428398587124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815ae1e5bdcf3094bb44b448d1dfe939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 0}
+  MapGenerator: {fileID: 1160449418064861096}
+  player: {fileID: 0}
